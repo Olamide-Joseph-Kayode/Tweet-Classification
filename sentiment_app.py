@@ -7,10 +7,10 @@ import numpy as np
 import pandas as pd
 
 # Load the trained model
-model = load_model("C:/Users/Olamide Joseph/sentiment_analysis/sent_dep_model.h5")
+model = load_model("sent_dep_model.h5")
 
 # Load the saved tokenizer used during training
-with open("C:/Users/Olamide Joseph/sentiment_analysis/tokenizer.pkl", "rb") as tk:
+with open("tokenizer.pkl", "rb") as tk:
     tokenizer = pickle.load(tk)
 
 #  Define the function to preprocess the user text input
